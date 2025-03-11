@@ -13,5 +13,6 @@ jobs:
                echo "My First GitHub Actions Job"
                ls -lrt
                cat README.md
+               echo "Hello"
            - name: Generate ASCII Network
              run: cowsay -f dragon "Run for cover, I AM a Dragon..." >>dragon.txt
