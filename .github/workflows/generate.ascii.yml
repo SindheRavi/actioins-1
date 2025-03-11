@@ -10,13 +10,7 @@ jobs:
           uses: actions/checkout@v4
         - name: Install CowSay Program
           run: sudo apt-get install cowsay -y 
-        - name: Execute cowsay command
-          run: sudo apt-get install cowsay -y 
-        - name: Execute Cowsay command
-          run: cowsay -f dragon "Run for Cover, I am a Dragon Power .." >>dragon.txt 
-        - name: Test if File Exists
-          run: grep -i "dragon" dragon.txt
-        - name: Read the file
-          run: cat dragon.txt
-        - name: Checkout Repo file
-          run: ls -lrta
+        - name: Execute shell script
+          run: |
+             chmod +x ascuu-script.sh 
+             ./ascuu-script.sh
